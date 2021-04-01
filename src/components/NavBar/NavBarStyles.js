@@ -5,6 +5,7 @@ export default createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     borderRight: '1px solid teal',
+    height: '100vh',
     // listStyle: 'none',
     // margin: 0,
     // padding: 10,

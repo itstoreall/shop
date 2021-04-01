@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import HomeView from './views/HomeView';
+import Content from './components/Content';
 import Footer from './components/Footer';
 import useStyles from './AppStyles';
 
@@ -8,15 +8,16 @@ const App = () => {
   const s = useStyles();
 
   return (
-    <>
+    <div className={s.App}>
       <Header />
-      <main className={s.main}>
+      <div className="container App">
         <NavBar />
-        <h1>The Shop</h1>
-        <HomeView />
-      </main>
+        <main className={s.main}>
+          <Content />
+        </main>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
