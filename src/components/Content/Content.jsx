@@ -1,6 +1,4 @@
-import HomeView from '../../views/HomeView';
-import ProductView from '../../views/ProductView';
-import CartView from '../../views/CartView';
+import { routes } from '../../routes';
 import useStyles from './ContentStyles';
 
 const Content = () => {
@@ -9,10 +7,10 @@ const Content = () => {
 
   return (
     <section className={s.Content}>
-      <p>{pathname}</p>
-      {pathname === '/' && <HomeView />}
-      {pathname === '/products' && <ProductView />}
-      {pathname === '/cart' && <CartView />}
+      {routes.map(
+        ({ path, component: Component }) =>
+          pathname === path && <Component key={path} />,
+      )}
     </section>
   );
 };

@@ -9,27 +9,19 @@ export default createUseStyles({
     overflow: 'auto',
   },
 
-  link: {
+  // Логика из компонента NavLink
+  link: isActive => ({
     padding: 20,
-    color: 'grey',
+    color: isActive ? '#fff' : 'grey',
     fontWeight: 500,
-    backgroundColor: '#f1f1f1',
+    backgroundColor: isActive ? 'tomato' : '#f1f1f1',
     borderRadius: 5,
     border: '3px solid #fff',
     borderBottom: 'none',
 
     '&:hover': {
       color: '#fff',
-      backgroundColor: 'teal',
+      backgroundColor: isActive ? 'tomato' : 'teal',
     },
-  },
-
-  activeLink: {
-    backgroundColor: 'tomato',
-    color: '#fff',
-
-    '&:hover': {
-      backgroundColor: 'tomato',
-    },
-  },
+  }),
 });
