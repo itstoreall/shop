@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className={s.Footer}>
-        <div className="container">
+        <div className="container Footer">
           <p>my Shop</p>
         </div>
       </div>

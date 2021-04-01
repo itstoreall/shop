@@ -5,7 +5,7 @@ export default createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     borderRight: '1px solid teal',
-    height: '100vh',
+    // height: '100%',
     // listStyle: 'none',
     // margin: 0,
     // padding: 10,
@@ -17,8 +17,12 @@ export default createUseStyles({
   link: {
     // backgroundColor: 'inherit',
     // textDecoration: 'none',
-    padding: 10,
+    padding: '15px 20px',
     color: 'teal',
+
+    '&:not(:last-child)': {
+      borderBottom: '1px solid teal',
+    },
 
     '&:hover': {
       color: '#fff',

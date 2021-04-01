@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <>
       <div className={s.Header}>
-        <div className="container">
-          <p>my Shop</p>
+        <div className="container Header">
+          <p className={s.logo}>my Shop</p>
+          <p className={s.tel}>Phone-number</p>
         </div>
       </div>
     </>

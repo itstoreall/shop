@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  // overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
@@ -28,10 +29,22 @@ p {
 
 .container {
   margin: 0 auto;
+  width: 100%;
   max-width: 1000px;
 
-  &.App {
+  &.App,
+  &.Header,
+  &.Footer {
     display: flex;
-    background-color: pink;
+  }
+
+  &.App {
+    height: 100vh;
+  }
+
+  &.Header,
+  &.Footer {
+    padding: 0 20px;
+    justify-content: space-between;
   }
 }
