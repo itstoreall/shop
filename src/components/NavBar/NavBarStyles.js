@@ -4,25 +4,19 @@ export default createUseStyles({
   NavBar: {
     display: 'flex',
     flexDirection: 'column',
-    borderRight: '1px solid teal',
-    // height: '100%',
-    // listStyle: 'none',
-    // margin: 0,
-    // padding: 10,
-    // minWidth: 130,
-    width: 180,
+    width: 140,
+    borderRight: '1px solid #f2f2f2',
     overflow: 'auto',
   },
 
   link: {
-    // backgroundColor: 'inherit',
-    // textDecoration: 'none',
-    padding: '15px 20px',
-    color: 'teal',
-
-    '&:not(:last-child)': {
-      borderBottom: '1px solid teal',
-    },
+    padding: 20,
+    color: 'grey',
+    fontWeight: 500,
+    backgroundColor: '#f1f1f1',
+    borderRadius: 5,
+    border: '3px solid #fff',
+    borderBottom: 'none',
 
     '&:hover': {
       color: '#fff',
@@ -32,10 +26,9 @@ export default createUseStyles({
 
   activeLink: {
     backgroundColor: 'tomato',
-    color: '#f1f1f1',
+    color: '#fff',
 
     '&:hover': {
-      color: '#fff',
       backgroundColor: 'tomato',
     },
   },

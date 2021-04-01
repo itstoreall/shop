@@ -1,3 +1,4 @@
+import NavLink from './NavLink';
 import useStyles from './NavBarStyles';
 
 const NavBar = () => {
@@ -5,15 +6,9 @@ const NavBar = () => {
 
   return (
     <div className={s.NavBar}>
-      <a className={s.link} href="/">
-        Home
-      </a>
-      <a className={s.link} href="products">
-        Products
-      </a>
-      <a className={s.link} href="cart">
-        Cart
-      </a>
+      <NavLink path={'/'} label={'Home'} />
+      <NavLink path={'/products'} label={'Products'} />
+      <NavLink path={'/cart'} label={'Cart'} />
     </div>
   );
 };
