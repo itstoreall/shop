@@ -1,0 +1,2 @@
+(this.webpackJsonpshop=this.webpackJsonpshop||[]).push([[5],{142:function(e,s,t){"use strict";t.r(s);var n=t(2),c=function(){return Object(n.jsx)("p",{children:"Hi from Reviews"})};s.default=function(){return Object(n.jsxs)(n.Fragment,{children:[Object(n.jsx)("h1",{children:"Reviews"}),Object(n.jsx)(c,{})]})}}}]);
+//# sourceMappingURL=Review.e3b506e9.chunk.js.map

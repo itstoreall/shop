@@ -1,2 +1,0 @@
-(this.webpackJsonpshop=this.webpackJsonpshop||[]).push([[0],{40:function(t,e,n){"use strict";n.r(e);var r=n(1),s=function(){return Object(r.jsx)("p",{children:"Hi from Cart"})};e.default=function(){return Object(r.jsxs)(r.Fragment,{children:[Object(r.jsx)("h1",{children:"Cart"}),Object(r.jsx)(s,{})]})}}}]);
-//# sourceMappingURL=Cart.062a2c78.chunk.js.map
