@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import { routes } from '../../routes';
 import { Switch, Route } from 'react-router-dom';
 import useStyles from './ContentStyles';
@@ -8,12 +9,14 @@ const Content = () => {
 
   return (
     <section className={s.Content}>
-      <Switch>
-        {routes.map(({ path, exact, component: Component }) => (
-          <Route path={path} exact={exact} component={Component} key={path} />
-        ))}
-        <Route component={NotFoundView} />
-      </Switch>
+      <Suspense fallback={<span>Loading...</span>}>
+        <Switch>
+          {routes.map(({ path, exact, component: Component }) => (
+            <Route path={path} exact={exact} component={Component} key={path} />
+          ))}
+          <Route component={NotFoundView} />
+        </Switch>
+      </Suspense>
     </section>
   );
 };

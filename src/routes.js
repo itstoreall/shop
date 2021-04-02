@@ -1,8 +1,20 @@
-import HomeView from './views/HomeView';
-import ProductView from './views/ProductView';
-import CartView from './views/CartView';
-import ReviewView from './views/ReviewView';
-import ProductDetailsView from './views/ProductDetailsView';
+import { lazy } from 'react';
+
+const HomeView = lazy(() =>
+  import('./views/HomeView' /* webpackChunkName: 'Home' */),
+);
+const ProductView = lazy(() =>
+  import('./views/ProductView' /* webpackChunkName: 'Product' */),
+);
+const ProductDetailsView = lazy(() =>
+  import('./views/ProductDetailsView' /* webpackChunkName: 'ProductDetails' */),
+);
+const CartView = lazy(() =>
+  import('./views/CartView' /* webpackChunkName: 'Cart' */),
+);
+const ReviewView = lazy(() =>
+  import('./views/ReviewView' /* webpackChunkName: 'Review' */),
+);
 
 export const routes = [
   {
