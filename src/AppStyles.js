@@ -2,7 +2,7 @@ import { createUseStyles } from 'react-jss';
 
 export default createUseStyles({
   App: {
-    minHeight: '100vh',
+    // minHeight: '100vh',
   },
 
   main: {

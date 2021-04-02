@@ -1,23 +1,21 @@
 import { routes } from '../../routes';
+import { Switch, Route } from 'react-router-dom';
 import useStyles from './ContentStyles';
+import NotFoundView from '../../views/NotFoundView';
 
 const Content = () => {
-  const { pathname } = window.location;
   const s = useStyles();
 
   return (
     <section className={s.Content}>
-      {routes.map(
-        ({ path, component: Component }) =>
-          pathname === path && <Component key={path} />,
-      )}
+      <Switch>
+        {routes.map(({ path, exact, component: Component }) => (
+          <Route path={path} exact={exact} component={Component} key={path} />
+        ))}
+        <Route component={NotFoundView} />
+      </Switch>
     </section>
   );
 };
 
 export default Content;
-
-/**
- * Content в зависимости от адреса отображает
- * разные компоненты
- */

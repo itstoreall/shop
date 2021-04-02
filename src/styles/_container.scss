@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+
+  &.App,
+  &.Header,
+  &.Footer {
+    display: flex;
+  }
+
+  &.App {
+    height: calc(100vh - 100px);
+  }
+
+  &.Header,
+  &.Footer {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+}

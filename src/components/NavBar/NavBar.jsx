@@ -1,5 +1,5 @@
-import NavLink from './NavLink';
 import { routes } from '../../routes';
+import { NavLink } from 'react-router-dom';
 import useStyles from './NavBarStyles';
 
 const NavBar = () => {
@@ -7,9 +7,19 @@ const NavBar = () => {
 
   return (
     <div className={s.NavBar}>
-      {routes.map(({ path, label }) => (
-        <NavLink key={path} path={path} label={label} />
-      ))}
+      {routes.map(({ path, label, showInMenu }) =>
+        showInMenu ? (
+          <NavLink
+            key={path}
+            to={path}
+            exact
+            className={s.link}
+            activeClassName={s.activeLink}
+          >
+            {label}
+          </NavLink>
+        ) : null,
+      )}
     </div>
   );
 };

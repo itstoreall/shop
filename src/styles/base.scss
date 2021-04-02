@@ -1,3 +1,5 @@
+@import './shared.scss';
+
 html {
   box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-  // overflow: hidden;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
@@ -21,30 +23,13 @@ a {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 p {
   padding: 0;
   margin: 0;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1000px;
-
-  &.App,
-  &.Header,
-  &.Footer {
-    display: flex;
-  }
-
-  &.App {
-    height: 100vh;
-  }
-
-  &.Header,
-  &.Footer {
-    padding: 0 20px;
-    justify-content: space-between;
-  }
 }
