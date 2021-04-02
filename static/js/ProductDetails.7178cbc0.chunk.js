@@ -1,0 +1,2 @@
+(this.webpackJsonpshop=this.webpackJsonpshop||[]).push([[3],{39:function(t,s,e){"use strict";e.r(s);var c=e(1),n=function(){return Object(c.jsx)("p",{children:"Hi from ProductsDetails"})};s.default=function(){return Object(c.jsxs)(c.Fragment,{children:[Object(c.jsx)("h1",{children:"Product Details"}),Object(c.jsx)(n,{})]})}}}]);
+//# sourceMappingURL=ProductDetails.7178cbc0.chunk.js.map
