@@ -17,6 +17,13 @@
 - redux-devtools-extension
 - @reduxjs/toolkit
 - redux-persist
+- lazy, Suspense (react)
+- NavLink, Switch, Route, HashRouter (rrd)
+
+```
+npm install @material-ui/core
+npm install @material-ui/icons
+```
 
 > The End of the Shop
 
